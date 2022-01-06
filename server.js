@@ -13,12 +13,12 @@ const houses = [
             province: "BC",
             postalCode: "V6B 3H6"
         },
-        listingPrice: 518446000,
+        listingPrice: 518446000
     }
 ]
 
 app.get("/api/houses", (req, res) => {
-  res.send({houses:houses})
+  res.send(houses)
 });
 
 app.post("/api/houses", (req,res) => {
